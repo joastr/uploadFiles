@@ -1,7 +1,75 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="../style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Open+Sans" rel="stylesheet">
+        <style>
+            
+       
+
+            input:not([type="image" i]) {
+                color: black;
+                background: white;
+                border-radius: 10px !important;
+                padding: 10px;
+            }
+
+            .upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            margin-top: 20px;
+            }
+
+            .btn {
+            color: gray;
+            background-color: white;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            }
+
+            .upload-btn-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            right: 0;  
+            opacity: 0;
+            } 
+            label {
+            font-family: 'Open Sans', sans-serif; 
+            font-size: 1.1em; 
+            font-weight: 700;
+            }
+
+            h1 {
+            font-family:Acme, sans-serif; 
+            color:#ff6f61; 
+            text-align:center; 
+            margin-top: 100px; 
+            font-size: 2.5em;
+            }
+
+            form {
+            text-align:center;
+            }
+
+            input[type=submit] {
+            font-family: 'Open Sans', sans-serif; 
+            font-size: 1.1em; 
+            max-width: 100px; 
+            width: 90%; 
+            background:#ff6f61; 
+            color:white; 
+            border-radius:10px; 
+            border: none;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
+            margin-top: 20px;
+            }
+
+        </style>
     </head>
     <body>
         <h1>Wgraj plik</h1>
@@ -9,8 +77,12 @@
             <label>Tytuł pliku</label>
             <input type="text" name="title">
             <br>
-            <label>Plik</label>
-            <input type="file" name="upload" multiple="multiple"><br>
+           
+            <div class="upload-btn-wrapper">
+                <label style="margin-left: 25px">Plik</label>
+                <button class="btn">Upload a file</button>
+                <input type="file" name="upload" multiple="multiple"><br>
+            </div><br>
             <input type="submit" value="Wyślij">
         </form>
     </body>
