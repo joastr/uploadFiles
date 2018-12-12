@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Acme");
+h1 {
+  font-family: Acme, sans-serif;
+  color: #FF6F61;
+  font-size: 3em;
+  text-align: center;
+}
+
+input[file] {
+  margin: 20px 0;
+}
+/*# sourceMappingURL=style.css.map */

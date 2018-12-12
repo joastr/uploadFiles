@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+$headline: Acme, sans-serif;
+$color: #FF6F61;
+
+h1 {
+    font-family: $headline;
+    color: $color;
+    font-size: 3em;
+    text-align: center;
+}
+
+input[file] {
+    margin: 20px 0;
+}
